@@ -24,6 +24,57 @@ kineval.robotForwardKinematics = function robotForwardKinematics () {
     }
 
     // STENCIL: call kineval.buildFKTransforms();
+    kineval.buildFKTransforms();
+}
+
+kineval.buildFKTransforms = function buildFKTransforms () {
+    mstack = [generate_identity()]
+    this.traverseFKBase(robot.origin);
+    this.traverseFKLink(robot.base);
+}
+
+kineval.traverseFKBase = function traverseFKBase (origin) {
+    var translation = generate_translation_matrix(origin.xyz[0],origin.xyz[1],origin.xyz[2]);
+    var r = matrix_multiply(generate_rotation_matrix_Z(origin.rpy[2]),generate_rotation_matrix_Y(origin.rpy[1]));
+    var rotation = matrix_multiply(r, generate_rotation_matrix_X(origin.x));
+
+    var transform = matrix_multiply(translation, rotation);
+
+    robot.origin.xform = transform;
+    robot.links[robot.base].xform = transform;
+
+    mstack.push(mstack[mstack.length - 1], transform);
+}
+
+kineval.traverseFKLink = function traverseFKLink (link) {
+    cur_link = link;
+    robot.links[link].xform = mstack[mstack.length - 1];
+    if (robot.links[link].children) {
+
+        for (var i = 0; i < robot.links[link].children.length; i++) {
+            var child_name = robot.links[link].children[i];
+            this.traverseFKJoint(child_name);
+            mstack.pop()
+        }
+    }
+}
+
+kineval.traverseFKJoint = function traverseFKJoint (joint) {
+    cur_joint = joint;
+    var translation = generate_translation_matrix(robot.joints[joint].origin.xyz[0],robot.joints[joint].origin.xyz[1],robot.joints[joint].origin.xyz[2]);
+    var r = matrix_multiply(generate_rotation_matrix_Z(robot.joints[joint].origin.rpy[2]), generate_rotation_matrix_Y(robot.joints[joint].origin.rpy[1]));
+    var rotation = matrix_multiply(r, generate_rotation_matrix_X(robot.joints[joint].origin.rpy[0]));
+    
+    var transform = matrix_multiply(translation, rotation);
+
+    mstack.push(matrix_multiply(mstack[mstack.length-1], transform));
+
+    robot.joints[joint].xform = mstack[mstack.length - 1];
+
+    var child_name = robot.joints[joint].child;
+    if (child_name) {
+        this.traverseFKLink(child_name);
+    }
 }
 
     // STENCIL: implement buildFKTransforms, which kicks off
