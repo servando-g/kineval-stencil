@@ -105,7 +105,7 @@ function vector_normalize(v) {
 
 function vector_cross(a,b) {
     // return cross product of vector a and b with both has 3 dimensions
-    c = (a[1]*b[2] - a[2]*b[1])-(a[0]*b[2] - a[2]*b[0])+(a[0]*b[1] - a[1]*b[0]);
+    c = [(a[1]*b[2] - a[2]*b[1]),(a[2]*b[0] - a[0]*b[2]),(a[0]*b[1] - a[1]*b[0])];
     return c;
 }
 
@@ -137,8 +137,8 @@ function generate_rotation_matrix_X(angle) {
     // returns 4-by-4 matrix as a 2D array, angle is in radians
     const rx_mat = [
         [1, 0, 0, 0],
-        [0, Math.cos(angle), Math.sin(angle), 0],
-        [0, -Math.sin(angle), Math.cos(angle), 0],
+        [0, Math.cos(angle), -1*Math.sin(angle), 0],
+        [0, Math.sin(angle), Math.cos(angle), 0],
         [0, 0, 0, 1]
     ]; 
 
@@ -148,9 +148,9 @@ function generate_rotation_matrix_X(angle) {
 function generate_rotation_matrix_Y(angle) {
     // returns 4-by-4 matrix as a 2D array, angle is in radians
     const ry_mat = [
-        [Math.cos(angle), 0, -Math.sin(angle), 0],
+        [Math.cos(angle), 0, Math.sin(angle), 0],
         [0, 1, 0, 0],
-        [Math.sin(angle), 0, Math.cos(angle), 0],
+        [-1*Math.sin(angle), 0, Math.cos(angle), 0],
         [0, 0, 0, 1]
     ]; 
 
@@ -161,7 +161,7 @@ function generate_rotation_matrix_Y(angle) {
 function generate_rotation_matrix_Z(angle) {
     // returns 4-by-4 matrix as a 2D array, angle is in radians
     const rz_mat = [
-        [Math.cos(angle), -Math.sin(angle), 0, 0],
+        [Math.cos(angle), -1*Math.sin(angle), 0, 0],
         [Math.sin(angle), Math.cos(angle), 0, 0],
         [0, 0, 1, 0],
         [0, 0, 0, 1]

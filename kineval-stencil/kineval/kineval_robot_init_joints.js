@@ -42,18 +42,10 @@ kineval.initRobotJoints = function initRobotJoints() {
         // If the child does not exist
         if(robot.links[pLink].children === undefined) {
             // Set the parent link's child to current joint
-            robot.links[pLink].children = x;
-            robot.links[pLink].children = [robot.links[pLink].children];
+            robot.links[pLink].children = [];
         }
-        else if (Array.isArray(robot.links[pLink].children)) {
-            robot.links[pLink].children.push(x);
-        }
-        else {
-            // If it does exist, include the parent link's previous child(ren)
-            // and current joint to parent link's child
-            robot.links[pLink].children = [robot.links[link].children, x];
-        }
-
+        
+        robot.links[pLink].children.push(x);
         // Set the parent of the child link to the current joint
         robot.links[cLink].parent = x;
 
