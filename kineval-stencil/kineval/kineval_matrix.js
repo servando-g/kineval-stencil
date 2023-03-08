@@ -46,12 +46,12 @@ function matrix_multiply(m1,m2) {
         return
     }
     
-    const result  = new Array(m1.length);
+    var result  = new Array(m1.length);
     
     for (let i = 0; i < m1.length; i++) {
         result[i] = []
         for (let j = 0; j < m2[0].length; j++) {
-            sum = 0;
+            var sum = 0;
             for (let k = 0; k < m1[0].length; k++) {
                 sum += m1[i][k] * m2[k][j];
             }
@@ -88,12 +88,12 @@ function matrix_transpose(m) {
 
 function vector_normalize(v) {
     // returns normalized vector for v
-    sum = 0;
+    var sum = 0;
     for (let i = 0; i < v.length; i++) {
-        sum += v[i];
+        sum += v[i]**2;
     }
     
-    norm_val = Math.sqrt(sum);
+    var norm_val = Math.sqrt(sum);
 
     for (let i = 0; i < v.length; i++) {
         v[i] = v[i]/norm_val;
@@ -137,7 +137,7 @@ function generate_rotation_matrix_X(angle) {
     // returns 4-by-4 matrix as a 2D array, angle is in radians
     const rx_mat = [
         [1, 0, 0, 0],
-        [0, Math.cos(angle), -1*Math.sin(angle), 0],
+        [0, Math.cos(angle), -Math.sin(angle), 0],
         [0, Math.sin(angle), Math.cos(angle), 0],
         [0, 0, 0, 1]
     ]; 
@@ -150,7 +150,7 @@ function generate_rotation_matrix_Y(angle) {
     const ry_mat = [
         [Math.cos(angle), 0, Math.sin(angle), 0],
         [0, 1, 0, 0],
-        [-1*Math.sin(angle), 0, Math.cos(angle), 0],
+        [-Math.sin(angle), 0, Math.cos(angle), 0],
         [0, 0, 0, 1]
     ]; 
 
@@ -161,7 +161,7 @@ function generate_rotation_matrix_Y(angle) {
 function generate_rotation_matrix_Z(angle) {
     // returns 4-by-4 matrix as a 2D array, angle is in radians
     const rz_mat = [
-        [Math.cos(angle), -1*Math.sin(angle), 0, 0],
+        [Math.cos(angle), -Math.sin(angle), 0, 0],
         [Math.sin(angle), Math.cos(angle), 0, 0],
         [0, 0, 1, 0],
         [0, 0, 0, 1]

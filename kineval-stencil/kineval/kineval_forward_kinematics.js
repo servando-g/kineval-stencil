@@ -35,20 +35,16 @@ kineval.buildFKTransforms = function buildFKTransforms () {
 
 kineval.traverseFKBase = function traverseFKBase (origin) {
     var translation = generate_translation_matrix(origin.xyz[0],origin.xyz[1],origin.xyz[2]);
-    var r = matrix_multiply(generate_rotation_matrix_Y(origin.rpy[1]),generate_rotation_matrix_Z(origin.rpy[2]));
-    var rotation = matrix_multiply(generate_rotation_matrix_X(origin.rpy[0]),r);
+    var rotation = matrix_multiply(generate_rotation_matrix_Y(origin.rpy[1]),generate_rotation_matrix_X(origin.rpy[0]));
+    rotation = matrix_multiply(generate_rotation_matrix_Z(origin.rpy[2]),rotation);
 
     var transform = matrix_multiply(translation, rotation);
 
     mstack.push(matrix_multiply(mstack[mstack.length - 1], transform));
 
-    // robot.origin.xform = mstack[mstack.length -1];
 }
 
 kineval.traverseFKLink = function traverseFKLink (link) {
-    // if (link != robot.base) {
-    //     robot.links[link].xform = robot.joints[robot.links[link].parent].xform;
-    // }
     if (robot.links[link].children) {
         
         for (var i = 0; i < robot.links[link].children.length; i++) {
@@ -63,8 +59,8 @@ kineval.traverseFKLink = function traverseFKLink (link) {
 kineval.traverseFKJoint = function traverseFKJoint (joint) {
     cur_joint = joint;
     var translation = generate_translation_matrix(robot.joints[joint].origin.xyz[0],robot.joints[joint].origin.xyz[1],robot.joints[joint].origin.xyz[2]);
-    var r = matrix_multiply(generate_rotation_matrix_Y(robot.joints[joint].origin.rpy[1]), generate_rotation_matrix_Z(robot.joints[joint].origin.rpy[2]));
-    var rotation = matrix_multiply(generate_rotation_matrix_X(robot.joints[joint].origin.rpy[0]),r);
+    var rotation = matrix_multiply(generate_rotation_matrix_Y(robot.joints[joint].origin.rpy[1]), generate_rotation_matrix_X(robot.joints[joint].origin.rpy[0]));
+    rotation = matrix_multiply(generate_rotation_matrix_Z(robot.joints[joint].origin.rpy[2]),rotation);
     
     var transform = matrix_multiply(translation, rotation);
 
