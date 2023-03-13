@@ -138,17 +138,16 @@ document.body.onload = kineval.start;
 
 // STUDENT: my_animate is where your robot's controls and movement are updated over time
 function my_init() {
-
+    // Robot: mr2
     kineval.startingPlaceholderInit(); // a quick and dirty JavaScript tutorial
-    kineval.params.dance_sequence_index = [0,1,2,3,4,3,2,3,6,7];
+    kineval.params.dance_sequence_index = [0,1,2,3,4,3,2,3,6];
     kineval.setpoints = [{"clavicle_right_yaw":0,"shoulder_right_yaw":0,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
-                            {"clavicle_right_yaw":0,"shoulder_right_yaw":1.49,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
-                            {"clavicle_right_yaw":0,"shoulder_right_yaw":1.5,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
-                            {"clavicle_right_yaw":0,"shoulder_right_yaw":3,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
-                            {"clavicle_right_yaw":0,"shoulder_right_yaw":2,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
-                            {"clavicle_right_yaw":0,"shoulder_right_yaw":1.48,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
-                            {"clavicle_right_yaw":0,"shoulder_right_yaw":1.48,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
-                            {"clavicle_right_yaw":0,"shoulder_right_yaw":1,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
+                            {"clavicle_right_yaw":.5,"shoulder_right_yaw":1,"upperarm_right_pitch":1,"forearm_right_yaw":-1,"clavicle_left_roll":-.5},
+                            {"clavicle_right_yaw":.75,"shoulder_right_yaw":1.5,"upperarm_right_pitch":2,"forearm_right_yaw":-1.5,"clavicle_left_roll":-.25},
+                            {"clavicle_right_yaw":1,"shoulder_right_yaw":2,"upperarm_right_pitch":3,"forearm_right_yaw":-2,"clavicle_left_roll":0},
+                            {"clavicle_right_yaw":1.25,"shoulder_right_yaw":1.5,"upperarm_right_pitch":2,"forearm_right_yaw":-1.5,"clavicle_left_roll":.25},
+                            {"clavicle_right_yaw":1.5,"shoulder_right_yaw":1,"upperarm_right_pitch":1,"forearm_right_yaw":-1,"clavicle_left_roll":.5},
+                            {"clavicle_right_yaw":0,"shoulder_right_yaw":0,"upperarm_right_pitch":0,"forearm_right_yaw":0,"clavicle_left_roll":0},
                         ]
 
 }
