@@ -1,5 +1,5 @@
-//CI grader generates report at 17-03-2023-11-02-29
-//Commit hash: 89ae7ed
+//CI grader generates report at 17-03-2023-14-20-29
+//Commit hash: 204dde2
 grade = 
 {
   "servando": {
@@ -323,7 +323,7 @@ grade =
     },
     "quizzes": [
       {
-        "status": "PENDING"
+        "status": "Takehome: 0.4 Interactive: 1.0"
       },
       {
         "status": "PENDING"
