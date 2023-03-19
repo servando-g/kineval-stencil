@@ -1,5 +1,5 @@
-//CI grader generates report at 18-03-2023-13-45-42
-//Commit hash: b558e02
+//CI grader generates report at 19-03-2023-14-06-27
+//Commit hash: c71919b
 grade = 
 {
   "servando": {
@@ -16,10 +16,8 @@ grade =
         ]
       },
       "ROS Pub/Sub": {
-        "status": "PENDING",
-        "comments": [
-          "Passing 0 of 3 tests"
-        ]
+        "status": "CHECK",
+        "comments": "Passing 3 out of 3 tests"
       },
       "PathPlan_Heap": {
         "status": "PASS",
@@ -325,19 +323,19 @@ grade =
     },
     "quizzes": [
       {
-        "status": "PENDING"
+        "status": "Takehome: 0.4 Interactive: 1.0"
       },
       {
-        "status": "PENDING"
+        "status": "Takehome: 0.5 Interactive: 1.0"
       },
       {
-        "status": "PENDING"
+        "status": "Takehome: 0.9 Interactive: 0.67"
       },
       {
-        "status": "PENDING"
+        "status": "Takehome (Doubled): 1.0  (No Interactive)"
       },
       {
-        "status": "PENDING"
+        "status": "Takehome: 0.25 Interactive: 0.4"
       },
       {
         "status": "PENDING"
