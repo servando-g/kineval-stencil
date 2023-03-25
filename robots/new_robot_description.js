@@ -12,7 +12,7 @@ links_geom_imported = false;
 robot = new Object(); // or just {} will create new object
 
 // give the robot a name
-robot.name = "mr2";
+robot.name = "greeter";
 
 // initialize start pose of robot in the world
 robot.origin = {xyz: [0,0.25,0], rpy:[0,0,0]};  
@@ -28,6 +28,8 @@ robot.links = {
     "head": {},
     "rightshoulder": {},
     "leftshoulder": {},
+    "rightforearm": {},
+    "leftforearm": {},
   
 };
 /* for you to do
@@ -67,14 +69,28 @@ robot.joints.rightshoulder_pitch.origin = {xyz: [0,1,-0.25], rpy:[-Math.PI/4,0,0
 robot.joints.rightshoulder_pitch.axis = [1,0,0];
 
 robot.joints.leftshoulder_pitch = {parent: "torso", child: "leftshoulder"};
-robot.joints.leftshoulder_pitch.origin = {xyz: [0,1,0.25], rpy:[Math.PI/4,0,0]};
-robot.joints.leftshoulder_pitch.axis = [1,0,0];
+robot.joints.leftshoulder_pitch.origin = {xyz: [0,1,0.25], rpy:[3*Math.PI/4,0,0]};
+robot.joints.leftshoulder_pitch.axis = [0,0,1];
+
+robot.joints.rightforearm_pitch = {parent: "rightshoulder", child: "rightforearm"};
+robot.joints.rightforearm_pitch.origin = {xyz: [0,0.8,0], rpy:[0,0,0]};
+robot.joints.rightforearm_pitch.axis = [0,0,1];
+
+robot.joints.leftforearm_pitch = {parent: "leftshoulder", child: "leftforearm"};
+robot.joints.leftforearm_pitch.origin = {xyz: [0,0.8,0], rpy:[0,0,0]};
+robot.joints.leftforearm_pitch.axis = [0,0,1];
+
+
 
 
 // specify name of endeffector frame
 robot.endeffector = {};
 robot.endeffector.frame = "torso_yaw";
 robot.endeffector.position = [[0],[0],[0.0],[1]]
+
+//red is x
+//green is y
+//blue is z
 
 //////////////////////////////////////////////////
 /////     DEFINE LINK threejs GEOMETRIES
@@ -104,13 +120,21 @@ links_geom["torso"].applyMatrix( new THREE.Matrix4().makeTranslation(0, 0.5, 0) 
 links_geom["head"] = new THREE.CubeGeometry( 0.75, 0.75, 0.75);
 links_geom["head"].applyMatrix( new THREE.Matrix4().makeTranslation(0,0.375,0));
 
-links_geom["rightshoulder"] = new THREE.CubeGeometry(0.3,1,0.3);
-links_geom["rightshoulder"].applyMatrix( new THREE.Matrix4().makeTranslation(0.0,0.375,0))
+links_geom["rightshoulder"] = new THREE.CubeGeometry(0.3,0.8,0.3);
+links_geom["rightshoulder"].applyMatrix( new THREE.Matrix4().makeTranslation(0.0,0.375,0));
 
 
-links_geom["leftshoulder"] = new THREE.CubeGeometry(0.3,1,0.3);
+links_geom["leftshoulder"] = new THREE.CubeGeometry(0.3,0.8,0.3);
+links_geom["leftshoulder"].applyMatrix( new THREE.Matrix4().makeTranslation(0.0,0.375,0));
 
-robot.partner_name ="jmgalvan";
-links_geom["leftshoulder"].applyMatrix( new THREE.Matrix4().makeTranslation(0.0,0.375,0))
+links_geom["rightforearm"] = new THREE.CubeGeometry(0.3,0.7,0.3);
+links_geom["rightforearm"].applyMatrix( new THREE.Matrix4().makeTranslation(0,0.25,0));
+
+links_geom["leftforearm"] = new THREE.CubeGeometry(0.3, 0.7, 0.3);
+links_geom["leftforearm"].applyMatrix( new THREE.Matrix4().makeTranslation(0,0.25,0));
+
+
+
+
 
 robot.partner_name = "servando";

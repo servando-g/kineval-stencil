@@ -76,10 +76,22 @@ function matrix_transpose(m) {
 
 }
 
-// function matrix_pseudoinverse(m) {
-//     // returns pseudoinverse of matrix m
+function matrix_pseudoinverse(m) {
+    // returns pseudoinverse of matrix m
 
-// }
+    var svd = numeric.svd(m);
+
+    var U = svd.U;
+    var S = svd.S;
+    var V = svd.V;
+
+    S = numeric.diag(S.map(s => s == 0 ? 0: 1/s));
+    U = numeric.transpose(U);
+    V = numeric.transpose(V);
+
+    return numeric.dot(V, numeric.dot(S,U));
+
+}
 
 // function matrix_invert_affine(m) {
 //     // returns 2D array that is the invert affine of 4-by-4 matrix m

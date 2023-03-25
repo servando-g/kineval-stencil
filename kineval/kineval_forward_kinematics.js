@@ -66,9 +66,9 @@ kineval.traverseFKJoint = function traverseFKJoint (joint) {
    
     var translation = generate_translation_matrix(robot.joints[joint].origin.xyz[0],robot.joints[joint].origin.xyz[1],robot.joints[joint].origin.xyz[2]);
 
-    var axis_norm = vector_normalize(robot.joints[joint].axis);
-    var q = this.quaternionFromAxisAngle(axis_norm, robot.joints[joint].angle);
-    var R = this.quaternionToRotationMatrix(q);
+    var q = this.quaternionFromAxisAngle(robot.joints[joint].axis, robot.joints[joint].angle);
+    var norm_q = this.quaternionNormalize(q);
+    var R = this.quaternionToRotationMatrix(norm_q);
 
     var rotation = matrix_multiply(generate_rotation_matrix_Y(robot.joints[joint].origin.rpy[1]), generate_rotation_matrix_X(robot.joints[joint].origin.rpy[0]));
     rotation = matrix_multiply(generate_rotation_matrix_Z(robot.joints[joint].origin.rpy[2]),rotation);

@@ -13,7 +13,8 @@
 kineval.quaternionFromAxisAngle = function quaternion_from_axisangle(axis,angle) {
     // returns quaternion q as dic, with q.a as real number, q.b as i component, q.c as j component, q.d as k component
     
-    
+    // axis = kineval.quaternionNormalize(axis);
+
     var q = {
         a: Math.cos(angle/2),
         b: axis[0] * Math.sin(angle/2),
