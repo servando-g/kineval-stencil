@@ -64,9 +64,10 @@ function matrix_multiply(m1,m2) {
 function matrix_transpose(m) {
     // returns 2D array that is the result of m1*m2
 
-    const m_trans = new Array(m.length);
+    const m_trans = new Array(m[0].length);
     
     for (let i = 0; i < m.length; i++) {
+        m_trans[i] = new Array(m.length)
         for (let j = 0; j < m[0].length; j++) {
             m_trans[i][j] = m[j][i];   
         }
@@ -79,17 +80,13 @@ function matrix_transpose(m) {
 function matrix_pseudoinverse(m) {
     // returns pseudoinverse of matrix m
 
-    var svd = numeric.svd(m);
+    var mt = matrix_transpose(m);
 
-    var U = svd.U;
-    var S = svd.S;
-    var V = svd.V;
+    var mmt = matrix_multiply(m, mt);
 
-    S = numeric.diag(S.map(s => s == 0 ? 0: 1/s));
-    U = numeric.transpose(U);
-    V = numeric.transpose(V);
+    var inv = matrix_multiply(matrix_multiply(mt, numeric.inv(mmt)), m);
 
-    return numeric.dot(V, numeric.dot(S,U));
+    return inv
 
 }
 
