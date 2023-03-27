@@ -84,7 +84,13 @@ function matrix_pseudoinverse(m) {
 
     var mmt = matrix_multiply(m, mt);
 
-    var inv = matrix_multiply(matrix_multiply(mt, numeric.inv(mmt)), m);
+
+    if (m.length > m[0].length) {
+        var inv = matrix_multiply(matrix_multiply(mt, numeric.inv(mmt)), mt);
+    }
+    else {
+        var inv = matrix_multiply(mt, matrix_multiply(mt, numeric.inv(mmt)));
+    }
 
     return inv
 
