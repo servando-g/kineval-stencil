@@ -1,5 +1,5 @@
-//CI grader generates report at 27-03-2023-22-38-09
-//Commit hash: fafbe0b
+//CI grader generates report at 28-03-2023-02-14-43
+//Commit hash: 2fcf01e
 grade = 
 {
   "servando": {
@@ -140,14 +140,14 @@ grade =
         }
       },
       "FK_MatrixRoutines": {
-        "status": "PENDING",
+        "status": "PASS",
         "comments": [
-          "0 out of 1 test cases passed"
+          "1 out of 1 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b\"/servando/FK_MatrixRoutines/test_0.js:626\\ntest_main()numeric = require('./numeric-1.2.6.js')\\n           ^^^^^^^\\n\\nSyntaxError: Unexpected identifier\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Mo"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
@@ -198,14 +198,14 @@ grade =
         ]
       },
       "FSMDance_Quaternion": {
-        "status": "PENDING",
+        "status": "PASS",
         "comments": [
-          "0 out of 1 test cases passed"
+          "1 out of 1 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b\"/servando/FSMDance_Quaternion/test_0.js:351\\ntest_main()numeric = require('./numeric-1.2.6.js')\\n           ^^^^^^^\\n\\nSyntaxError: Unexpected identifier\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function."
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
@@ -235,58 +235,58 @@ grade =
         ]
       },
       "IK_Jacobian": {
-        "status": "PENDING",
+        "status": "PASS",
         "comments": [
-          "0 out of 2 test cases passed"
+          "2 out of 2 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "b'robot.jacobian not defined, please check whether you have assigned value for robot.jacobian\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "b'robot.jacobian not defined, please check whether you have assigned value for robot.jacobian\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
       "IK_JTranspose": {
-        "status": "PENDING",
+        "status": "PASS",
         "comments": [
-          "0 out of 3 test cases passed"
+          "3 out of 3 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "b'robot.dq not defined, please check whether you have assigned value for robot.dq\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "b'robot.dq not defined, please check whether you have assigned value for robot.dq\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 2": {
-            "Status": "Failed",
-            "Stderr": "b'Target not reached\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
       "IK_JPseudoInverse": {
-        "status": "PENDING",
+        "status": "PASS",
         "comments": [
-          "0 out of 3 test cases passed"
+          "3 out of 3 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "b'robot.dq not defined, please check whether you have assigned value for robot.dq\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "b'robot.dq not defined, please check whether you have assigned value for robot.dq\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 2": {
-            "Status": "Failed",
-            "Stderr": "b'Target not reached\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
