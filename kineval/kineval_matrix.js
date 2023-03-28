@@ -66,9 +66,9 @@ function matrix_transpose(m) {
 
     const m_trans = new Array(m[0].length);
     
-    for (let i = 0; i < m.length; i++) {
+    for (let i = 0; i < m[0].length; i++) {
         m_trans[i] = new Array(m.length)
-        for (let j = 0; j < m[0].length; j++) {
+        for (let j = 0; j < m.length; j++) {
             m_trans[i][j] = m[j][i];   
         }
     }
@@ -82,14 +82,17 @@ function matrix_pseudoinverse(m) {
 
     var mt = matrix_transpose(m);
 
-    var mmt = matrix_multiply(m, mt);
 
 
     if (m.length > m[0].length) {
-        var inv = matrix_multiply(matrix_multiply(mt, numeric.inv(mmt)), mt);
+        var mtm = matrix_multiply(mt, m);
+        var imtm = numeric.inv(mtm);
+        var inv = matrix_multiply(imtm, mt);
     }
     else {
-        var inv = matrix_multiply(mt, matrix_multiply(mt, numeric.inv(mmt)));
+        var mmt = matrix_multiply(m, mt);
+        var immt = numeric.inv(mmt);
+        var inv = matrix_multiply(immt);
     }
 
     return inv
