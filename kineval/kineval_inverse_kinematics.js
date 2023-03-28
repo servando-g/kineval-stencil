@@ -80,7 +80,7 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
 
     var T_p = matrix_multiply(robot.links[robot.joints[endeffector_joint].child].xform, endeffector_position_local)
 
-    robot.dx = [[endeffector_target_world.position[0][0] - T_p[0][0]],
+    dx = [[endeffector_target_world.position[0][0] - T_p[0][0]],
                 [endeffector_target_world.position[1][0] - T_p[1][0]],
                 [endeffector_target_world.position[2][0] - T_p[2][0]],
                 [0],
@@ -141,7 +141,7 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
         jacob = matrix_transpose(jacob)
     }
 
-    dq = matrix_multiply(jacob, robot.dx)
+    dq = matrix_multiply(jacob, dx)
 
     j = 0
     for (joint in robot.joints) {
@@ -154,6 +154,7 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
         j++
     }
 
+    robot.dx = dx
     robot.jacobian = jacobian
     robot.dq = dq
 
