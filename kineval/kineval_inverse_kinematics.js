@@ -87,7 +87,7 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
                 [0],
                 [0]]
 
-    robot.jacobian = [[], [], [], [], [], []]
+    jacobian = [[], [], [], [], [], []]
     var i = 0
     for (joint in robot.joints) {
 
@@ -107,21 +107,21 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
                      T_p[2][0] - T_o[2][0]]
 
             var v_c = vector_cross(z_i, o)
-            robot.jacobian[0][i] = v_c[0]
-            robot.jacobian[1][i] = v_c[1]
-            robot.jacobian[2][i] = v_c[2]
-            robot.jacobian[3][i] = z_i[0]
-            robot.jacobian[4][i] = z_i[1]
-            robot.jacobian[5][i] = z_i[2]
+            jacobian[0][i] = v_c[0]
+            jacobian[1][i] = v_c[1]
+            jacobian[2][i] = v_c[2]
+            jacobian[3][i] = z_i[0]
+            jacobian[4][i] = z_i[1]
+            jacobian[5][i] = z_i[2]
 
         }
         else {
-            robot.jacobian[0][i] = z_i[0]
-            robot.jacobian[1][i] = z_i[1]
-            robot.jacobian[2][i] = z_i[2]
-            robot.jacobian[3][i] = 0
-            robot.jacobian[4][i] = 0
-            robot.jacobian[5][i] = 0
+            jacobian[0][i] = z_i[0]
+            jacobian[1][i] = z_i[1]
+            jacobian[2][i] = z_i[2]
+            jacobian[3][i] = 0
+            jacobian[4][i] = 0
+            jacobian[5][i] = 0
         }
         
         if (endeffector_joint == joint) {
@@ -132,7 +132,7 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
    
     }
 
-    var jacob = robot.jacobian;
+    var jacob = jacobian;
 
     if (kineval.params.ik_pseudoinverse) {
         jacob = matrix_pseudoinverse(jacob)
@@ -141,11 +141,11 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
         jacob = matrix_transpose(jacob)
     }
 
-    robot.dq = matrix_multiply(jacob, robot.dx)
+    dq = matrix_multiply(jacob, robot.dx)
 
     j = 0
     for (joint in robot.joints) {
-        robot.joints[joint].control += kineval.params.ik_steplength*robot.dq[j][0]
+        robot.joints[joint].control += kineval.params.ik_steplength*dq[j][0]
 
         if (endeffector_joint == joint) {
             break
@@ -154,8 +154,8 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
         j++
     }
 
-    robot.jacobian = robot.jacobian
-    robot.dq = robot.dq
+    robot.jacobian = jacobian
+    robot.dq = dq
 
 
 }
