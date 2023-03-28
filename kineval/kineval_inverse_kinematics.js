@@ -154,7 +154,8 @@ kineval.iterateIK = function iterate_inverse_kinematics(endeffector_target_world
         j++
     }
 
-
+    robot.jacobian = robot.jacobian
+    robot.dq = robot.dq
 
 
 }
