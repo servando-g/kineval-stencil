@@ -1,5 +1,5 @@
-//CI grader generates report at 28-03-2023-14-30-42
-//Commit hash: 7270736
+//CI grader generates report at 28-03-2023-22-18-16
+//Commit hash: a483df1
 grade = 
 {
   "servando": {
@@ -87,7 +87,7 @@ grade =
           },
           "Test 3": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index].priority || heap[current_index].priority > heap[right_index].priority)) {\\n                                                                                                                         ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/home/logan/Desktop/teaching/CI-grader/ci_test_root"
+            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index].priority || heap[current_index].priority > heap[right_index].priority)) {\\n                                                                                                                         ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/home/liz/Desktop/teaching/CI-grader/ci_test_root/Ass"
           },
           "Test 4": {
             "Status": "Succeed",
@@ -103,11 +103,11 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
           }
         }
       },
@@ -119,11 +119,11 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._lo"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._lo"
           }
         }
       },
@@ -135,7 +135,7 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_PID/test_0.js:166\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_PID/test_0.js:166\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (module."
           }
         }
       },
