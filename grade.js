@@ -1,5 +1,5 @@
-//CI grader generates report at 30-03-2023-08-23-44
-//Commit hash: 82e2d70
+//CI grader generates report at 30-03-2023-14-48-05
+//Commit hash: 8780ab0
 grade = 
 {
   "servando": {
@@ -16,8 +16,10 @@ grade =
         ]
       },
       "ROS Pub/Sub": {
-        "status": "CHECK",
-        "comments": "Passing 3 out of 3 tests"
+        "status": "PENDING",
+        "comments": [
+          "Passing 0 of 3 tests"
+        ]
       },
       "PathPlan_Heap": {
         "status": "PASS",
@@ -87,7 +89,7 @@ grade =
           },
           "Test 3": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index].priority || heap[current_index].priority > heap[right_index].priority)) {\\n                                                                                                                         ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/home/liz/Desktop/teaching/CI-grader/ci_test_root/Ass"
+            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index].priority || heap[current_index].priority > heap[right_index].priority)) {\\n                                                                                                                         ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/home/logan/Desktop/teaching/CI-grader/ci_test_root"
           },
           "Test 4": {
             "Status": "Succeed",
@@ -103,11 +105,11 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
           }
         }
       },
@@ -119,11 +121,11 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._lo"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._lo"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
           }
         }
       },
@@ -135,7 +137,7 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_PID/test_0.js:166\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (module."
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_PID/test_0.js:166\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
           }
         }
       },
@@ -217,16 +219,10 @@ grade =
         ]
       },
       "FSMDance_SetpointControl": {
-        "status": "PASS",
+        "status": "PENDING",
         "comments": [
-          "1 out of 1 test cases passed"
-        ],
-        "test results": {
-          "Test 0": {
-            "Status": "Succeed",
-            "Stderr": "b''"
-          }
-        }
+          ""
+        ]
       },
       "FSMDance_FSM": {
         "status": "PENDING",
@@ -293,14 +289,46 @@ grade =
       "MotionPlan_Collision": {
         "status": "PENDING",
         "comments": [
-          ""
-        ]
+          "0 out of 3 test cases passed"
+        ],
+        "test results": {
+          "Test 0": {
+            "Status": "Failed",
+            "Stderr": "b'[ERROR]: Collision test 0 failed\\n'"
+          },
+          "Test 1": {
+            "Status": "Failed",
+            "Stderr": "b'[ERROR]: Collision test 1 failed\\n'"
+          },
+          "Test 2": {
+            "Status": "Failed",
+            "Stderr": "b'[ERROR]: Collision test 2 failed\\n'"
+          }
+        }
       },
       "MotionPlan_2DRRTConnect": {
         "status": "PENDING",
         "comments": [
-          ""
-        ]
+          "0 out of 4 test cases passed"
+        ],
+        "test results": {
+          "Test 0": {
+            "Status": "Failed",
+            "Stderr": "b'[ERROR]: Search time out\\n'"
+          },
+          "Test 1": {
+            "Status": "Failed",
+            "Stderr": "b'[ERROR]: Search time out\\n'"
+          },
+          "Test 2": {
+            "Status": "Failed",
+            "Stderr": "b'[ERROR]: Search time out\\n'"
+          },
+          "Test 3": {
+            "Status": "Failed",
+            "Stderr": "b'[ERROR]: Search time out\\n'"
+          }
+        }
       },
       "MotionPlan_CSpaceRRTConnect": {
         "status": "PENDING",
@@ -323,19 +351,19 @@ grade =
     },
     "quizzes": [
       {
-        "status": "Takehome: 0.4 Interactive: 1.0"
+        "status": "PENDING"
       },
       {
-        "status": "Takehome: 0.5 Interactive: 1.0"
+        "status": "PENDING"
       },
       {
-        "status": "Takehome: 0.9 Interactive: 0.67"
+        "status": "PENDING"
       },
       {
-        "status": "Takehome (Doubled): 1.0  (No Interactive)"
+        "status": "PENDING"
       },
       {
-        "status": "Takehome: 0.25 Interactive: 0.4"
+        "status": "PENDING"
       },
       {
         "status": "PENDING"
