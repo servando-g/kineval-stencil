@@ -1,5 +1,5 @@
-//CI grader generates report at 04-04-2023-12-34-04
-//Commit hash: 157320b
+//CI grader generates report at 05-04-2023-02-48-20
+//Commit hash: 66704d9
 grade = 
 {
   "servando": {
@@ -364,22 +364,22 @@ grade =
         "status": "Takehome: 0.25 Interactive: 0.4"
       },
       {
-        "status": "PENDING"
+        "status": "Voted in the URDF showcase: 2.0  (No Takehome)"
       },
       {
-        "status": "PENDING"
+        "status": "Takehome: 0.5 Interactive: 1.0"
       },
       {
-        "status": "PENDING"
+        "status": "Voted in the FSM Dance showcase: 2.0  (No Takehome)"
       },
       {
-        "status": "PENDING"
+        "status": "No Quiz 9, 2 points given"
       },
       {
-        "status": "PENDING"
+        "status": "No Quiz 10, 2 points given"
       },
       {
-        "status": "PENDING"
+        "status": "No Quiz 11, 2 points given"
       }
     ]
   }
