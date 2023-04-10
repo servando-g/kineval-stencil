@@ -1,5 +1,5 @@
-//CI grader generates report at 10-04-2023-14-25-45
-//Commit hash: d90a79d
+//CI grader generates report at 10-04-2023-16-53-36
+//Commit hash: cabd37f
 grade = 
 {
   "servando": {
@@ -326,7 +326,7 @@ grade =
           },
           "Test 3": {
             "Status": "Failed",
-            "Stderr": "b''"
+            "Stderr": "b'[ERROR]: Search time out\\n'"
           }
         }
       },
