@@ -237,7 +237,120 @@ function tree_add_edge(tree,q1_idx,q2_idx) {
     //   find_path
     //   path_dfs
 
+function rrt_extend(T,q) {
+    q_near, near_idx = nearest_neighbor(q,T)
+    q_new = []
+    if (new_config(q, q_near, q_new)) {
+        tree_add_vertex(T, q_new)
+        T.vertices[(T.vertices.length - 1)].parent = near_idx
+        tree_add_edge(T, near_idx, (T.vertices.length - 1))
+        if (q_new == q) {
+            return "succeeded"
+        }
+        else {
+            return "extended"
+        }
+    }
+    return "failed"
+}
 
+function rrt_connect() {
+    while (1) {
+
+        S = rrt_extend(T,q)
+
+        if (S != "succeeded") {
+            return S
+        }
+
+    }
+}
+
+function random_config() {
+    x = Math.floor(Math.random()*(7-(-2)+1))+(-2)
+    y = Math.floor(Math.random()*(7-(-2)+1))+(-2)
+
+    q_rand = [x, y]
+
+    return q_rand
+}
+
+function new_config(q, q_near, q_new) {
+    x = (q[0] - q_near[0]) ** 2
+    y = (q[1] - q_near[1]) ** 2
+
+    distance = Math.sqrt(x+y)
+
+    ux = x/distance
+    uy = y/distance
+
+    q_new[0] = q_near[0] + eps*ux
+    q_new[1] = q_near[1] + eps*uy
+
+    return testCollision(q_new)
+}
+
+function nearest_neighbor(q,T) {
+    nearest_nbr = 0
+
+    for (let index = 0; index < T.vertices.length; index++) {
+
+        t_x = T.vertices[index].vertex[0]
+        t_y = T.vertices[index].vertex[1]
+
+        x = (q[0] - t_x) ** 2
+        y = (q[1] - t_y) ** 2
+
+        distance = Math.sqrt(x+y)
+
+        if (min_distance == undefined) {
+            min_distance = distance
+            nearest_nbr = index
+        }
+        else if (distance < min_distance) {
+            min_distance = distance
+            nearest_nbr = index
+        }   
+
+    }
+
+    return T.vertices[nearest_nbr], nearest_nbr
+}
+
+function normalize_joint_state() {
+
+}
+
+function find_path() {
+
+}
+
+function path_dfs(Ta, Tb) {
+    shared_node = Ta.vertices.length - 1
+
+    from_start = []
+    to_goal = []
+
+    idx = shared_node
+
+    while (idx != 0) {
+        from_start.unshift(idx)
+
+        idx = Ta.vertices[idx].parent
+    }
+
+    idx = Tb.vertices[idx].parent
+    while (idx != 0) {
+        to_goal.push(idx)
+
+        idx = Tb.vertices[idx].parent
+    }
+
+    path = from_start.concat(to_goal)
+
+    return path
+
+}
 
 
 
