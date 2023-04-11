@@ -25,6 +25,7 @@
 
 function iterateRRT() {
 
+    
 
     // STENCIL: implement a single iteration of an RRT algorithm.
     //   An asynch timing mechanism is used instead of a for loop to avoid
