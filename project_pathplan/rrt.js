@@ -45,7 +45,7 @@ function iterateRRT() {
 function iterateRRTConnect() {
 
     if (search_iter_count == search_max_iterations) {
-        return "Failed"
+        return "failed"
     }
 
     var q_rand = randomConfig()
