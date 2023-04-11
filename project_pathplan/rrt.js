@@ -51,11 +51,11 @@ function iterateRRTConnect() {
     var q_rand = randomConfig()
     var q_new = []
     var q_dummy = []
-    if (extendRRT(T_a, q_rand, q_new) != "Trapped") {
-        if (connectRRT(T_b, q_new, q_dummy) == "Reached") {
+    if (extendRRT(T_a, q_rand, q_new) != "trapped") {
+        if (connectRRT(T_b, q_new, q_dummy) == "reached") {
             dfsPath(T_a, T_b)
             search_iterate = false
-            return "Succeeded"
+            return "succeeded"
         }
     }
 
@@ -63,7 +63,7 @@ function iterateRRTConnect() {
     T_a = T_b
     T_b = temp
 
-    return "Extended"
+    return "extended"
 
     // STENCIL: implement a single iteration of an RRT-Connect algorithm.
     //   An asynch timing mechanism is used instead of a for loop to avoid
@@ -106,13 +106,13 @@ function extendRRT(T,q, q_new) {
         insertTreeEdge(T, near_idx, (T.vertices.length - 1))
         var distance = calcDistance(q_new, q)
         if (distance <= eps) {
-            return "Reached"
+            return "reached"
         }
         else {
-            return "Advanced"
+            return "advanced"
         }
     }
-    return "Trapped"
+    return "trapped"
 }
 
 function calcDistance(q_new, q) {
@@ -131,7 +131,7 @@ function connectRRT(T,q, q_dummy) {
 
         var S = extendRRT(T,q,q_dummy)
 
-        if (S != "Advanced") {
+        if (S != "advanced") {
             return S
         }
 
