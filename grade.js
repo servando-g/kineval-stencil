@@ -1,5 +1,5 @@
-//CI grader generates report at 10-04-2023-19-08-00
-//Commit hash: b913a2d
+//CI grader generates report at 10-04-2023-20-58-07
+//Commit hash: 54997c5
 grade = 
 {
   "servando": {
@@ -314,19 +314,19 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "b'[ERROR]: Search time out\\n'"
+            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "b'[ERROR]: Search time out\\n'"
+            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
           },
           "Test 2": {
             "Status": "Failed",
-            "Stderr": "b'[ERROR]: Search time out\\n'"
+            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
           },
           "Test 3": {
             "Status": "Failed",
-            "Stderr": "b'[ERROR]: Search time out\\n'"
+            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
           }
         }
       },
