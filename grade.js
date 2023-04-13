@@ -1,5 +1,5 @@
-//CI grader generates report at 12-04-2023-13-07-29
-//Commit hash: b1baf4c
+//CI grader generates report at 13-04-2023-18-50-20
+//Commit hash: 11096df
 grade = 
 {
   "servando": {
@@ -16,7 +16,7 @@ grade =
         ]
       },
       "ROS Pub/Sub": {
-        "status": "CHECK - PARTIAL CREDIT",
+        "status": "CHECK",
         "comments": "Passing 3 out of 3 tests"
       },
       "PathPlan_Heap": {
@@ -271,22 +271,22 @@ grade =
         }
       },
       "IK_JPseudoInverse": {
-        "status": "PENDING",
+        "status": "PASS",
         "comments": [
-          "0 out of 3 test cases passed"
+          "3 out of 3 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "b\"module.js:549\\n    throw err;\\n    ^\\n\\nError: Cannot find module '/servando/IK_JPseudoInverse/test_0.js'\\n    at Function.Module._resolveFilename (module.js:547:15)\\n    at Function.Module._load (module.js:474:25)\\n    at Function.Module.runMain (module.js:693:10)\\n    at startup (bootstrap_node.js:188:16)\\n    at bootstrap_node.js:609:3\\n\""
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "b\"module.js:549\\n    throw err;\\n    ^\\n\\nError: Cannot find module '/servando/IK_JPseudoInverse/test_1.js'\\n    at Function.Module._resolveFilename (module.js:547:15)\\n    at Function.Module._load (module.js:474:25)\\n    at Function.Module.runMain (module.js:693:10)\\n    at startup (bootstrap_node.js:188:16)\\n    at bootstrap_node.js:609:3\\n\""
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 2": {
-            "Status": "Failed",
-            "Stderr": "b\"module.js:549\\n    throw err;\\n    ^\\n\\nError: Cannot find module '/servando/IK_JPseudoInverse/test_2.js'\\n    at Function.Module._resolveFilename (module.js:547:15)\\n    at Function.Module._load (module.js:474:25)\\n    at Function.Module.runMain (module.js:693:10)\\n    at startup (bootstrap_node.js:188:16)\\n    at bootstrap_node.js:609:3\\n\""
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
