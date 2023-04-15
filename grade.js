@@ -1,5 +1,5 @@
-//CI grader generates report at 10-04-2023-22-42-17
-//Commit hash: 40a8dc3
+//CI grader generates report at 15-04-2023-15-38-04
+//Commit hash: 77b5979
 grade = 
 {
   "servando": {
@@ -16,13 +16,11 @@ grade =
         ]
       },
       "ROS Pub/Sub": {
-        "status": "PENDING",
-        "comments": [
-          "Passing 0 of 3 tests"
-        ]
+        "status": "PASS - past two weeks (60% partial credit)",
+        "comments": "Passing 3 out of 3 tests"
       },
       "PathPlan_Heap": {
-        "status": "PASS",
+        "status": "PASS - past two weeks (60% partial credit)",
         "comments": [
           "10 out of 10 test cases passed"
         ],
@@ -89,7 +87,7 @@ grade =
           },
           "Test 3": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index].priority || heap[current_index].priority > heap[right_index].priority)) {\\n                                                                                                                         ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/home/liz/Desktop/teaching/CI-grader/ci_test_root/Ass"
+            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index].priority || heap[current_index].priority > heap[right_index].priority)) {\\n                                                                                                                         ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/home/logan/Desktop/teaching/CI-grader/ci_test_root"
           },
           "Test 4": {
             "Status": "Succeed",
@@ -105,11 +103,11 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
           }
         }
       },
@@ -121,11 +119,11 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._lo"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._lo"
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
           }
         }
       },
@@ -137,12 +135,12 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_PID/test_0.js:166\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (module."
+            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_PID/test_0.js:166\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
           }
         }
       },
       "FK_MatrixRoutines": {
-        "status": "PASS",
+        "status": "PASS - past two weeks (60% partial credit)",
         "comments": [
           "1 out of 1 test cases passed"
         ],
@@ -154,7 +152,7 @@ grade =
         }
       },
       "FK_Transforms": {
-        "status": "PASS",
+        "status": "PASS - past two weeks (60% partial credit)",
         "comments": [
           "8 out of 8 test cases passed"
         ],
@@ -200,7 +198,7 @@ grade =
         ]
       },
       "FSMDance_Quaternion": {
-        "status": "PASS",
+        "status": "PASS - on time (full credit)",
         "comments": [
           "1 out of 1 test cases passed"
         ],
@@ -211,7 +209,6 @@ grade =
           }
         }
       },
-      "FSMDance_RexArm": "FSMDance_RexArm",
       "FSMDance_BaseControl": {
         "status": "PENDING",
         "comments": [
@@ -219,10 +216,16 @@ grade =
         ]
       },
       "FSMDance_SetpointControl": {
-        "status": "PENDING",
+        "status": "PASS - on time (full credit)",
         "comments": [
-          ""
-        ]
+          "1 out of 1 test cases passed"
+        ],
+        "test results": {
+          "Test 0": {
+            "Status": "Succeed",
+            "Stderr": "b''"
+          }
+        }
       },
       "FSMDance_FSM": {
         "status": "PENDING",
@@ -231,7 +234,7 @@ grade =
         ]
       },
       "IK_Jacobian": {
-        "status": "PASS",
+        "status": "PASS - on time (full credit)",
         "comments": [
           "2 out of 2 test cases passed"
         ],
@@ -247,7 +250,7 @@ grade =
         }
       },
       "IK_JTranspose": {
-        "status": "PASS",
+        "status": "PASS - on time (full credit)",
         "comments": [
           "3 out of 3 test cases passed"
         ],
@@ -267,7 +270,7 @@ grade =
         }
       },
       "IK_JPseudoInverse": {
-        "status": "PASS",
+        "status": "PASS - on time (full credit)",
         "comments": [
           "3 out of 3 test cases passed"
         ],
@@ -294,39 +297,39 @@ grade =
         "test results": {
           "Test 0": {
             "Status": "Failed",
-            "Stderr": "b'[ERROR]: Collision test 0 failed\\n'"
+            "Stderr": "Error message too long, print partially: b'/servando/MotionPlan_Collision/test_0.js:854\\n    return traverse_collision_forward_kinematics_link(robot.links[.child], robot.links[joint.child].xform, q)\\n                                                                  ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js"
           },
           "Test 1": {
             "Status": "Failed",
-            "Stderr": "b'[ERROR]: Collision test 1 failed\\n'"
+            "Stderr": "Error message too long, print partially: b'/servando/MotionPlan_Collision/test_1.js:854\\n    return traverse_collision_forward_kinematics_link(robot.links[.child], robot.links[joint.child].xform, q)\\n                                                                  ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js"
           },
           "Test 2": {
             "Status": "Failed",
-            "Stderr": "b'[ERROR]: Collision test 2 failed\\n'"
+            "Stderr": "Error message too long, print partially: b'/servando/MotionPlan_Collision/test_2.js:854\\n    return traverse_collision_forward_kinematics_link(robot.links[.child], robot.links[joint.child].xform, q)\\n                                                                  ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js"
           }
         }
       },
       "MotionPlan_2DRRTConnect": {
-        "status": "PENDING",
+        "status": "PASS - on time (full credit)",
         "comments": [
-          "0 out of 4 test cases passed"
+          "4 out of 4 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 2": {
-            "Status": "Failed",
-            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 3": {
-            "Status": "Failed",
-            "Stderr": "b'[ERROR]: Incorrect search_result status\\n'"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
