@@ -1,5 +1,5 @@
-//CI grader generates report at 15-04-2023-19-05-08
-//Commit hash: 6b1497d
+//CI grader generates report at 16-04-2023-13-37-37
+//Commit hash: 34d161b
 grade = 
 {
   "servando": {
@@ -70,28 +70,28 @@ grade =
       "PathPlan_AStar": {
         "status": "PENDING",
         "comments": [
-          "4 out of 5 test cases passed"
+          "0 out of 5 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Succeed",
-            "Stderr": "b''"
+            "Status": "Failed",
+            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_0.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
           },
           "Test 1": {
-            "Status": "Succeed",
-            "Stderr": "b''"
+            "Status": "Failed",
+            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_1.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
           },
           "Test 2": {
-            "Status": "Succeed",
-            "Stderr": "b''"
+            "Status": "Failed",
+            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_2.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
           },
           "Test 3": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index].priority || heap[current_index].priority > heap[right_index].priority)) {\\n                                                                                                                         ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/home/logan/Desktop/teaching/CI-grader/ci_test_root"
+            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
           },
           "Test 4": {
-            "Status": "Succeed",
-            "Stderr": "b''"
+            "Status": "Failed",
+            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_4.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
           }
         }
       },
