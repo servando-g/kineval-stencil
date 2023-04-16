@@ -131,13 +131,33 @@ function traverse_collision_forward_kinematics_link(link,mstack,q) {
 
 function robot_collision_forward_kinematics(q) {
 
-    return traverse_collision_forward_kinematics_link(robot.links[robot.base], robot.links[robot.base].xform, q)
+    var t = generate_translation_matrix(q[0], q[1], q[2])
+    rpy= [generate_rotation_matrix_X(q[3]),generate_rotation_matrix_Y(q[4]),generate_rotation_matrix_Z(q[5])]
+    var r = matrix_multiply(matrix_multiply(rpy[2], rpy[1]), rpy[0])
+
+    var stack = matrix_multiply(t, r)
+
+    return traverse_collision_forward_kinematics_link(robot.links[robot.base], stack, q)
     
 }
 
 function traverse_collision_forward_kinematics_joint(joint, mstack, q) {
 
-    return traverse_collision_forward_kinematics_link(robot.links[.child], robot.links[joint.child].xform, q)
+    var t = generate_translation_matrix(joint.origin.xyz[0],joint.origin.xyz[1], joint.origin.xyz[2])
+    rpy= [generate_rotation_matrix_X(joint.origin.rpy[0]),generate_rotation_matrix_Y(joint.origin.rpy[1]),generate_rotation_matrix_Z(joint.origin.rpy[2])]
+    var r = matrix_multiply(matrix_multiply(rpy[2], rpy[1]), rpy[0])
+
+    var transform = matrix_multiply(t, r)
+
+    var stack = matrix_multiply(mstack, transform)
+
+    var q = kineval.quaternionFromAxisAngle(joint.axis, joint.angle);
+    var norm_p = kineval.quaternionNormalize(q);
+    q = kineval.quaternionToRotationMatrix(norm_p)
+
+    stack = matrix_multiply(stack, q)
+
+    return traverse_collision_forward_kinematics_link(robot.links[joint.child], stack, q)
 
 }
 

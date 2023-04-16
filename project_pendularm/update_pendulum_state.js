@@ -63,11 +63,7 @@ function init_verlet_integrator(pendulum, t, gravity) {
 
 function set_PID_parameters(pendulum) {
     // STENCIL: change pid parameters
-<<<<<<< HEAD:project_pendularm/update_pendulum_state.js
     pendulum.servo = {kp:1500, kd:200, ki:500};  // no control
-=======
-    pendulum.servo = {kp:100, kd:50, ki:10};  // no control
->>>>>>> 7a78386440ea3790e88c8e30b6e92014a6f0f6de:kineval-stencil/project_pendularm/update_pendulum_state.js
     return pendulum;
 }
 

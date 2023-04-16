@@ -255,7 +255,9 @@ function minheap_extract(heap) {
     var left_index = (current_index * 2) + 1;
     var right_index = (current_index * 2) + 2;
 
-    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {
+    while ((left_index < heap.length && heap[current_index].priority > heap[left_index]?.priority) || 
+           (right_index < heap.length && heap[current_index].priority > heap[right_index]?.priority)) {
+
         let index = left_index;
         if (heap[left_index].priority > heap[right_index].priority) {
             index = right_index;
