@@ -1,5 +1,5 @@
-//CI grader generates report at 16-04-2023-17-05-30
-//Commit hash: 90e3456
+//CI grader generates report at 16-04-2023-20-33-59
+//Commit hash: e3f8218
 grade = 
 {
   "servando": {
@@ -70,72 +70,72 @@ grade =
       "PathPlan_AStar": {
         "status": "PENDING",
         "comments": [
-          "0 out of 5 test cases passed"
+          "4 out of 5 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_0.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_1.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 2": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_2.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 3": {
             "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_3.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
+            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:594\\n        if (heap[left_index].priority > heap[right_index].priority) {\\n                                                          ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/servando/PathPlan_AStar/test_3.js:594:59)\\n    at iterateGraphSearch (/home/logan/Desktop/teaching/CI-grader/ci_"
           },
           "Test 4": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/PathPlan_AStar/test_4.js:590\\n    while ((heap[current_index].priority > heap[left_index]?.priority || heap[current_index].priority > heap[right_index]?.priority)) {\\n                                                            ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions."
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
       "Pendularm_Euler": {
-        "status": "PENDING",
+        "status": "PASS - past two weeks (60% partial credit)",
         "comments": [
-          "0 out of 2 test cases passed"
+          "2 out of 2 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_Euler/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (mod"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
       "Pendularm_VelocityVerlet": {
-        "status": "PENDING",
+        "status": "PASS - past two weeks (60% partial credit)",
         "comments": [
-          "0 out of 2 test cases passed"
+          "2 out of 2 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_0.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_VelocityVerlet/test_1.js:149\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
       "Pendularm_PID": {
-        "status": "PENDING",
+        "status": "PASS - past two weeks (60% partial credit)",
         "comments": [
-          "0 out of 1 test cases passed"
+          "1 out of 1 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/Pendularm_PID/test_0.js:166\\n<<<<<<< HEAD:project_pendularm/update_pendulum_state.js\\n^^\\n\\nSyntaxError: Unexpected token <<\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js:663:10)\\n    at Module.load (module.js:565:32)\\n    at tryModuleLoad (module.js:505:12)\\n    at Function.Module._load (modul"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
@@ -290,22 +290,22 @@ grade =
         }
       },
       "MotionPlan_Collision": {
-        "status": "PENDING",
+        "status": "PASS - within two weeks (80% partial credit)",
         "comments": [
-          "0 out of 3 test cases passed"
+          "3 out of 3 test cases passed"
         ],
         "test results": {
           "Test 0": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/MotionPlan_Collision/test_0.js:854\\n    return traverse_collision_forward_kinematics_link(robot.links[.child], robot.links[joint.child].xform, q)\\n                                                                  ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 1": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/MotionPlan_Collision/test_1.js:854\\n    return traverse_collision_forward_kinematics_link(robot.links[.child], robot.links[joint.child].xform, q)\\n                                                                  ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 2": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b'/servando/MotionPlan_Collision/test_2.js:854\\n    return traverse_collision_forward_kinematics_link(robot.links[.child], robot.links[joint.child].xform, q)\\n                                                                  ^\\n\\nSyntaxError: Unexpected token .\\n    at createScript (vm.js:80:10)\\n    at Object.runInThisContext (vm.js:139:10)\\n    at Module._compile (module.js:616:28)\\n    at Object.Module._extensions..js (module.js"
+            "Status": "Succeed",
+            "Stderr": "b''"
           }
         }
       },
