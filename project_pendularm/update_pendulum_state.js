@@ -63,7 +63,7 @@ function init_verlet_integrator(pendulum, t, gravity) {
 
 function set_PID_parameters(pendulum) {
     // STENCIL: change pid parameters
-    pendulum.servo = {kp:1500, kd:200, ki:500};  // no control
+    pendulum.servo = {kp:200, kd:75, ki:5};  // no control
     return pendulum;
 }
 
@@ -72,10 +72,16 @@ function PID(pendulum, accumulated_error, dt) {
     // return: updated output in pendulum.control and accumulated_error
 
     pendulum.servo.error = pendulum.desired - pendulum.angle;
-    pendulum.servo.previous_error = pendulum.desired-pendulum.angle_previous;
 
-    pendulum.control = pendulum.servo.kp*pendulum.servo.error + pendulum.servo.ki*accumulated_error + pendulum.servo.kd*(pendulum.servo.error-pendulum.servo.previous_error)/dt;
+    p = pendulum.servo.kp*pendulum.servo.error
+
     accumulated_error = pendulum.servo.error + accumulated_error;
+    i = pendulum.servo.ki*accumulated_error
+
+
+    d = pendulum.servo.kd*(pendulum.angle_previous-pendulum.angle)/dt;
+
+    pendulum.control = p+i+d
 
 
     return [pendulum, accumulated_error];
