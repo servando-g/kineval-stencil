@@ -263,7 +263,7 @@ function minheap_extract(heap) {
             index = right_index;
         }
 
-        if (heap[current_index].priority > heap[index].priority && index < heap.length) {
+        if (index < heap.length && heap[current_index].priority > heap[index].priority && index < heap.length) {
             let temp = heap[current_index];
             heap[current_index] = heap[index];
             heap[index] = temp;
