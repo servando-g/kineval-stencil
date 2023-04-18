@@ -1,5 +1,5 @@
-//CI grader generates report at 17-04-2023-13-11-31
-//Commit hash: a9690a1
+//CI grader generates report at 18-04-2023-14-33-00
+//Commit hash: 533e776
 grade = 
 {
   "servando": {
@@ -68,9 +68,9 @@ grade =
         }
       },
       "PathPlan_AStar": {
-        "status": "PENDING",
+        "status": "PASS - past two weeks (60% partial credit)",
         "comments": [
-          "4 out of 5 test cases passed"
+          "5 out of 5 test cases passed"
         ],
         "test results": {
           "Test 0": {
@@ -86,8 +86,8 @@ grade =
             "Stderr": "b''"
           },
           "Test 3": {
-            "Status": "Failed",
-            "Stderr": "Error message too long, print partially: b\"/servando/PathPlan_AStar/test_3.js:594\\n        if (heap[left_index].priority > heap[right_index].priority) {\\n                                                          ^\\n\\nTypeError: Cannot read property 'priority' of undefined\\n    at minheap_extract (/servando/PathPlan_AStar/test_3.js:594:59)\\n    at iterateGraphSearch (/home/logan/Desktop/teaching/CI-grader/ci_"
+            "Status": "Succeed",
+            "Stderr": "b''"
           },
           "Test 4": {
             "Status": "Succeed",
@@ -192,7 +192,7 @@ grade =
         }
       },
       "FK_JointRendering": {
-        "status": "PENDING",
+        "status": "PASS - on time (full credit)",
         "comments": [
           ""
         ]
@@ -210,7 +210,7 @@ grade =
         }
       },
       "FSMDance_BaseControl": {
-        "status": "PENDING",
+        "status": "PASS - on time (full credit)",
         "comments": [
           ""
         ]
@@ -228,7 +228,7 @@ grade =
         }
       },
       "FSMDance_FSM": {
-        "status": "PENDING",
+        "status": "PASS - on time (full credit)",
         "comments": [
           ""
         ]
