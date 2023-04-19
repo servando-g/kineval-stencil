@@ -1,5 +1,5 @@
-//CI grader generates report at 19-04-2023-01-19-44
-//Commit hash: bf06339
+//CI grader generates report at 19-04-2023-13-08-17
+//Commit hash: 3471367
 grade = 
 {
   "servando": {
@@ -140,7 +140,7 @@ grade =
         }
       },
       "FK_MatrixRoutines": {
-        "status": "PASS - past two weeks (60% partial credit)",
+        "status": "PASS - within two weeks (80% partial credit)",
         "comments": [
           "1 out of 1 test cases passed"
         ],
@@ -152,7 +152,7 @@ grade =
         }
       },
       "FK_Transforms": {
-        "status": "PASS - past two weeks (60% partial credit)",
+        "status": "PASS - within two weeks (80% partial credit)",
         "comments": [
           "8 out of 8 test cases passed"
         ],
